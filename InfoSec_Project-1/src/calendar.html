@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar View</title>
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="icons/patient/logo.png" alt="Abesamis Dental Clinic Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html"><img src="icons/patient/dashboard_icon.png" alt="">Dashboard</a></li>
+                    <li class="active">
+                        <a href="appointments.html">
+                            <img src="icons/patient/calendar_icon.png" alt="">Appointments
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="icons/patient/work_schedules_icon.png" alt="">Patients</a></li>
+                    <li><a href="#"><img src="icons/patient/personnel_icon.png" alt="">Personnel Directory</a></li>
+                    <li><a href="#"><img src="icons/patient/reports_icon.png" alt="">Reports and Analytics</a></li>
+                    <li><a href="#"><img src="icons/patient/income_icon.png" alt="">Billing and Income</a></li>
+                    <li><a href="#"><img src="icons/patient/inventory_icon.png" alt="">Inventory</a></li>
+                </ul>
+            </nav>
+            <div class="signout">
+                <a href="#"><img src="icons/patient/signout_icon.png" alt="">Sign Out</a>
+            </div>
+        </aside>
+        <main>
+            <header class="navbar">
+                <div class="nav-buttons">
+                    <button onclick="window.location.href='request.html'">Request</button>
+                    <button onclick="window.location.href='listview.html'">List View</button>
+                    <button onclick="window.location.href='calendarview.html'" class="active">Calendar View</button>
+                </div>
+                <div class="user-info">
+                    <span>Leclerc, Charles<br>System Administrator</span>
+                    <img src="img/CarlosID.png" alt="User Photo">
+                </div>
+            </header>            
+            <section class="calendar-section">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search appointments">
+                    <button>Search</button>
+                    <button>Filter</button>
+                </div>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button>&lt;</button>
+                        <h2>October 2024</h2>
+                        <button>&gt;</button>
+                    </div>
+                    <table class="calendar">
+                        <thead>
+                            <tr>
+                                <th>MONDAY</th>
+                                <th>TUESDAY</th>
+                                <th>WEDNESDAY</th>
+                                <th>THURSDAY</th>
+                                <th>FRIDAY</th>
+                                <th>SATURDAY</th>
+                                <th>SUNDAY</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="appointment">09:00 AM - 10:00 AM</div>
+                                    <div class="appointment">11:00 AM - 12:00 PM</div>
+                                </td>
+                                <td>
+                                    <div class="appointment">09:00 AM - 10:00 AM</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="appointment">03:00 PM - 05:00 PM</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="appointment">09:00 AM - 10:00 AM</div>
+                                    <div class="appointment">03:00 PM - 05:00 PM</div>
+                                </td>
+                                <td>
+                                    <div class="appointment">02:00 PM - 03:00 PM</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="appointment">09:00 AM - 10:00 AM</div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="appointment">11:00 AM - 12:00 PM</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="details-container">
+                    <div class="overview">
+                        <h2>Overview</h2>
+                        <div class="overview-details">
+                            <div>
+                                <strong>Patient Name:</strong> Juan de la Cruz
+                            </div>
+                            <div>
+                                <strong>Date:</strong> October 30, 2024
+                            </div>
+                            <div>
+                                <strong>Time:</strong> 09:00 AM - 10:00 AM
+                            </div>
+                            <div>
+                                <strong>Status:</strong> Approved
+                            </div>
+                            <div>
+                                <strong>Session:</strong> General dental checkup
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upcoming">
+                        <h3>Upcoming</h3>
+                        <ul>
+                            <li>NOV 04 - Monday<br>10:00 AM - 11:00 AM</li>
+                            <li>NOV 06 - Wednesday<br>10:00 AM - 11:00 AM</li>
+                            <li>NOV 07 - Thursday<br>11:00 AM - 12:00 PM</li>
+                            <li>NOV 09 - Saturday<br>12:00 PM - 01:00 PM</li>
+                            <li>NOV 11 - Monday<br>01:00 PM - 02:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

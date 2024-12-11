@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #F9FCFF;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 300px;
+    background: #335271;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar .logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px 20px;
+}
+
+.sidebar nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a img {
+    margin-right: 10px;
+}
+
+.sidebar nav ul li.active {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .signout {
+    padding: 20px;
+}
+
+.sidebar .signout a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .signout a img {
+    margin-right: 10px;
+}
+
+main {
+    flex: 1;
+    margin-left: 300px; /* This margin ensures the main content doesn't overlap with the fixed sidebar */
+    padding: 20px;
+    background: #F9FCFF;
+    overflow-y: auto;
+    height: 100vh; /* Ensure the main section takes the full height of the viewport */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #A7A7A7;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons button {
+    background: #CD6A30;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-buttons button.active {
+    background: #A84321;
+}
+
+.nav-buttons button:hover {
+    background: #A84321;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.calendar-section {
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #A7A7A7;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    background: #CD6A30;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-bar button:hover {
+    background: #A84321;
+}
+
+.calendar-container {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    background: #CD6A30;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.calendar-header button:hover {
+    background: #A84321;
+}
+
+.calendar-header h2 {
+    margin: 0;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #A7A7A7;
+}
+
+.calendar th {
+    background: #F4F4F4;
+}
+
+.appointment {
+    background: #CD6A30;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.details-container {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.overview, .upcoming {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.overview h2, .upcoming h3 {
+    margin-top: 0;
+}
+
+.upcoming ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.upcoming ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}

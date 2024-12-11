@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/appointment_requests.css">
+    <title>Appointment Requests</title>
+</head>
+<body>
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+        <!-- Left Panel -->
+        <div id="left_panel">
+            <img id="logo" src="icons/patient/logo.png" alt="Logo">
+            <nav id="menu">
+                <label>
+                    <img src="icons/patient/dashboard_icon.png" alt="Dashboard Icon">Dashboard
+                </label>
+                <label>
+                    <img src="icons/patient/calendar_icon.png" alt="Appointments Icon">Appointments
+                </label>
+                <label>
+                    <img src="icons/patient/work_schedules_icon.png" alt="Patients Icon">Patients
+                </label>
+                <label>
+                    <img src="icons/patient/personnel_icon.png" alt="Personnel Directory Icon">Personnel Directory
+                </label>
+                <label>
+                    <img src="icons/patient/reports_icon.png" alt="Reports and Analytics Icon">Reports and Analytics
+                </label>
+                <label>
+                    <img src="icons/patient/income_icon.png" alt="Billing Icon">Billing
+                </label>
+                <label>
+                    <img src="icons/patient/inventory_icon.png" alt="Inventory Icon">Inventory
+                </label>
+                <label>
+                    <img src="icons/patient/signout_icon.png" alt="Logout Icon">Sign Out
+                </label>
+            </nav>
+        </div>
+
+        <!-- Right Panel -->
+        <div id="right_panel">
+            <!-- Header -->
+            <header id="header">
+                <div id="info">
+                    <p id="fullname">Leclerc, Charles</p>
+                    <p id="status">System Administrator</p>
+                </div>
+                <img id="profile_icon" src="img/CarlosID.png" alt="Profile Icon">
+            </header>
+
+            <!-- Main Content -->
+            <div class="main_content">
+                <h1>Appointment Requests</h1>
+                <div class="search_filter">
+                    <input type="text" placeholder="Search appointments">
+                    <button class="search_button">SEARCH</button>
+                    <button class="filter_button">FILTER</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Patient Name</th>
+                            <th>Payment Type</th>
+                            <th>Payment Status</th>
+                            <th>Requested Date</th>
+                            <th>Requested Time</th>
+                            <th>Date of Request</th>
+                            <th>Requested Dentist</th>
+                            <th>Reason for Booking the Appointment</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PAT00181</td>
+                            <td>Amelia V. Santos</td>
+                            <td>Cash on-site</td>
+                            <td class="status pending">Pending</td>
+                            <td>2024-11-02</td>
+                            <td>09:00 AM - 10:00 AM</td>
+                            <td>2024-10-20</td>
+                            <td>Dr. Evan J. Santos</td>
+                            <td>Regular cleaning</td>
+                            <td class="actions">
+                                <button class="approve">Approve</button>
+                                <button class="move">Move</button>
+                                <button class="cancel">Cancel</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PAT00483</td>
+                            <td>Lucas P. Garcia</td>
+                            <td>Online Payment</td>
+                            <td class="status pending">Pending</td>
+                            <td>2024-11-02</td>
+                            <td>01:00 PM - 02:30 PM</td>
+                            <td>2024-10-20</td>
+                            <td>Dr. Lucas M. Ramirez</td>
+                            <td>Tooth extraction</td>
+                            <td class="actions">
+                                <button class="approve">Approve</button>
+                                <button class="move">Move</button>
+                                <button class="cancel">Cancel</button>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

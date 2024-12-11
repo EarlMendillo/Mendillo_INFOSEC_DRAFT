@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments List View</title>
+    <link rel="stylesheet" href="css/appointment_list_view.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Left Panel -->
+        <div id="left_panel">
+            <div class="logo">
+                <img src="icons/patient/logo.png" alt="Abeams Dental Clinic Logo">
+            </div>
+            <nav id="menu">
+                <label><img src="icons/patient/dashboard_icon.png" alt="Dashboard Icon">Dashboard</label>
+                <label class="active"><img src="icons/patient/calendar_icon.png" alt="Appointments Icon">Appointments</label>
+                <label><img src="icons/patient/patients_icon.png" alt="Patients Icon">Patients</label>
+                <label><img src="icons/patient/personnel_icon.png" alt="Personnel Directory Icon">Personnel Directory</label>
+                <label><img src="icons/patient/reports_icon.png" alt="Reports and Analytics Icon">Reports and Analytics</label>
+                <label><img src="icons/patient/income_icon.png" alt="Billing Icon">Billing and Income</label>
+                <label><img src="icons/patient/inventory_icon.png" alt="Inventory Icon">Inventory</label>
+                <label><img src="icons/patient/signout_icon.png" alt="Logout Icon">Sign Out</label>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="header">
+                <h1>Appointments</h1>
+            </div>
+            <div class="sub-navigation">
+                <a href="#">Request</a>
+                <a href="#" class="active">List View</a>
+                <a href="#">Calendar View</a>
+            </div>
+            <div class="content">
+                <div class="search-filter">
+                    <input type="text" placeholder="Search appointments">
+                    <button class="search-btn">Search</button>
+                    <button class="filter-btn">Filter</button>
+                </div>
+                <table class="appointments-table">
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Patient Name</th>
+                            <th>Payment Type</th>
+                            <th>Payment Status</th>
+                            <th>Requested Date</th>
+                            <th>Requested Time</th>
+                            <th>Date of Request</th>
+                            <th>Requested Dentist</th>
+                            <th>Appointment Status</th>
+                            <th>Reason for Booking</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PAT0081</td>
+                            <td>Amelia V. Santos</td>
+                            <td>Cash on-site</td>
+                            <td class="status pending">Pending</td>
+                            <td>2024-11-02</td>
+                            <td>09:00 AM - 10:00 AM</td>
+                            <td>2024-10-20</td>
+                            <td>Dr. Evan J. Santos</td>
+                            <td class="status upcoming">Upcoming</td>
+                            <td>Regular cleaning</td>
+                            <td><button class="cancel-btn">Cancel</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div id="right_panel">
+            <!-- Header -->
+            <header id="header">
+                <div id="info">
+                    <p id="fullname">Leclerc, Charles</p>
+                    <p id="status">System Administrator</p>
+                </div>
+                <img id="profile_icon" src="img/CarlosID.png" alt="Profile Icon">
+            </header>
+        </div>
+    </div>
+</body>
+</html>
